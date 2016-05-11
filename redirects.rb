@@ -44,3 +44,5 @@ r302 '/running/troubleshooting/index.html', '/running/index.html#troubleshooting
 
 r302 '/concepts/diego/diego-components.html', '/concepts/diego/diego-architecture.html#core'
 r302 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-operations'
+r302 '/deploying/community-services.html', 'https://github.com/cloudfoundry-community/cf-services-contrib-release'
+r302 '/deploying/vcloud-stub.html', '/deploying/common/vsphere-vcloud-cf-stub.html'
