@@ -7,65 +7,51 @@ elastic_search: true
 
 public_host: docs.cloudfoundry.org
 
+broken_link_exclusions: iefix|arrowhead
+repo_link_enabled: true
+
+products:
+  - id: oss
+    subnav_root: deploying/secret-subnav.html
+
 sections:
-- repository:
-    name: cloudfoundry/docs-bosh
-  directory: bosh
-  subnav_template: cf-subnav.erb
-- repository:
-    name: cloudfoundry/docs-buildpacks
-  directory: buildpacks
-  subnav_template: cf-subnav.erb
-  dependent_sections:
-  - repository:
-      name: cloudfoundry-samples/pong_matcher_grails
-    no_docs: true
-  - repository:
-      name: cloudfoundry-samples/pong_matcher_groovy
-    no_docs: true
-  - repository:
-      name: cloudfoundry-samples/pong_matcher_spring
-    no_docs: true
-  - repository:
-      name: cloudfoundry-samples/pong_matcher_ruby
-    no_docs: true
-- repository:
-    name: cloudfoundry/docs-cf-admin
-  directory: adminguide
-  subnav_template: cf-subnav.erb
-- repository:
-    name: cloudfoundry/docs-cf-cli
-  directory: cf-cli
-  subnav_template: cf-subnav.erb
 - repository:
     name: cloudfoundry/docs-cloudfoundry-concepts
   directory: concepts
-  subnav_template: cf-subnav.erb
-- repository:
-    name: cloudfoundry/docs-deploying-cf
-  directory: deploying
-  subnav_template: cf-subnav.erb
-  dependent_sections:
-  - repository:
-      name: cloudfoundry/cf-release
-    no_docs: true
+  product_id: oss
 - repository:
     name: cloudfoundry/docs-dev-guide
   directory: devguide
-  subnav_template: cf-subnav.erb
+  product_id: oss
 - repository:
-    name: cloudfoundry/docs-loggregator
-  directory: loggregator
-  subnav_template: cf-subnav.erb
+    name: cloudfoundry/docs-cf-cli
+  directory: cf-cli
+  product_id: oss
 - repository:
-    name: cloudfoundry/docs-running-cf
-  directory: running
-  subnav_template: cf-subnav.erb
+    name: cloudfoundry/docs-cf-admin
+  directory: adminguide
+  product_id: oss
 - repository:
     name: cloudfoundry/docs-services
   directory: services
-  subnav_template: cf-subnav.erb
+  product_id: oss
 - repository:
-    name: cloudfoundry/uaa
-    ref: gh-pages
-  directory: api/uaa
+    name: cloudfoundry/docs-deploying-cf
+  directory: deploying
+  product_id: oss
+- repository:
+    name: cloudfoundry/docs-bosh
+  directory: bosh
+  product_id: oss
+- repository:
+    name: cloudfoundry/docs-running-cf
+  directory: running
+  product_id: oss
+- repository:
+    name: cloudfoundry/docs-buildpacks
+  directory: buildpacks
+  product_id: oss
+- repository:
+    name: cloudfoundry/docs-loggregator
+  directory: loggregator
+  product_id: oss
