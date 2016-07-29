@@ -12,7 +12,7 @@ repo_link_enabled: true
 
 products:
   - id: oss
-    subnav_root: deploying/secret-subnav.html
+    subnav_root: deploying/subnav-index.html
 
 sections:
 - repository:
